@@ -1,4 +1,4 @@
-module go.opencensus.io
+module github.com/quorumcontrol/opencensus-go
 
 require (
 	github.com/golang/protobuf v1.2.0
@@ -8,3 +8,5 @@ require (
 	google.golang.org/genproto v0.0.0-20190307195333-5fe7a883aa19 // indirect
 	google.golang.org/grpc v1.19.0
 )
+
+go 1.13

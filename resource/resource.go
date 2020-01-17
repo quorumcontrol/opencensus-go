@@ -57,7 +57,7 @@ func EncodeLabels(labels map[string]string) string {
 	return s
 }
 
-var labelRegex = regexp.MustCompile(`^\s*([[:ascii:]]{1,256}?)=("[[:ascii:]]{0,256}?")\s*,`)
+var labelRegex = regexp.MustCompile(`^\s*([\w]*)=("[\w]*")\s*,`)
 
 // DecodeLabels decodes a serialized label map as used in the OC_RESOURCE_LABELS variable.
 // A list of labels of the form `<key1>="<value1>",<key2>="<value2>",...` is accepted.
